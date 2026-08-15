@@ -36,9 +36,9 @@ The **Smart Haptic Chest Bag** bridges this gap by integrating an ultrasonic dis
 
 To ensure both user safety and system reliability, the power delivery network was specifically engineered around non-hazardous battery chemistry and balanced parallel power distribution:
 
-* **Battery Chemistry & Hazard Prevention:** Instead of standard Lithium-Polymer (LiPo) cells—which pose thermal runaway, fire, and explosion risks when worn close to the body—the system utilizes two rechargeable AA battery packs ($4 \times 1.2\text{ V}$ NiMH cells per pack yielding a nominal $4.8\text{ V}$).
-* **Dual Parallel Configuration ($2 \times 4.8\text{ V}$ Packs):** Connecting two identical $4.8\text{ V}$ battery packs in **parallel** provides:
-  * **Extended Runtime:** Doubles the total amp-hour ($\text{Ah}$) capacity, ensuring longer operational time for continuous wearable navigation.
+* **Battery Chemistry & Hazard Prevention:** Instead of standard Lithium-Polymer (LiPo) cells—which pose thermal runaway, fire, and explosion risks when worn close to the body—the system utilizes two rechargeable AA battery packs four 1.2V NiMH cells per pack yielding a nominal 4.8V).
+* **Dual Parallel Configuration (two 4.8V Packs):** Connecting two identical 4.8V battery packs in **parallel** provides:
+  * **Extended Runtime:** Doubles the total amp-hour (Ah)capacity, ensuring longer operational time for continuous wearable navigation.
   * **Power Stability & Peak Load Handling:** Reduces voltage drop and brownout risk when the micro-vibration motors and cooling fan draw peak current simultaneously.
 
 ### 🌡️ Thermal & Emergency Protocols
