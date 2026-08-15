@@ -27,6 +27,23 @@ The **Smart Haptic Chest Bag** bridges this gap by integrating an ultrasonic dis
 │
 ▼ (Calibrated PWM Signal Write)
 [ Coreless Vibration Motors ] ──► [ Continuous Tactile Feedback ]
+
+---
+
+## 🛡️ Integrated Safety & Thermal Management System
+
+To ensure user comfort and prevent thermal hazards during extended wear, the system incorporates automated active cooling, manual emergency signalling, and critical thermal shutdown protocols:
+
+* **Automated Active Cooling (≥ 35°C):** When internal enclosure temperatures exceed **35°C**, the microcontroller automatically triggers the high-airflow cooling fans to maintain safe operating conditions.
+* **Manual Emergency Help Signal:** Pressing the dedicated emergency push-button instantly activates:
+  * Visual alert on the integrated **LCD display** ("Emergency Help").
+  * High-intensity audible alerts via the **piezo buzzer**.
+  * Immediate override to switch on all **cooling fans**.
+* **Critical Thermal Auto-Shutdown (≥ 42°C):** If internal temperatures reach **42°C** (preventing skin discomfort or component degradation):
+  * The system sounds an emergency buzzer pattern.
+  * Displays a thermal alert on the LCD screen.
+  * Executes a full system safety shutdown.
+
 ---
 
 ## 📊 Calibration & Testing Metrics
