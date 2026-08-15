@@ -18,4 +18,38 @@ The **Smart Haptic Chest Bag** bridges this gap by integrating an ultrasonic dis
 - **Feedback Mechanism:** Coreless Micro-Vibration Motors with dynamic PWM Duty-Cycle Scaling
 - **Signal Filtering:** Software-level running average filter to eliminate environmental acoustic noise and signal jitter
 - **Enclosure:** Custom textile pouch with rigid-backed internal chassis to ensure sensor alignment and component stabilization
+[ Ultrasonic Transducer Array ]
+│
+▼ (Raw Signal + Acoustic Noise)
+[ ESP32 Microcontroller ]
+│
+├─► [ Software Running-Average Filter ]
+│
+▼ (Calibrated PWM Signal Write)
+[ Coreless Vibration Motors ] ──► [ Continuous Tactile Feedback ]
+---
+
+## 📊 Calibration & Testing Metrics
+
+The system maps physical distance (D) directly to dynamic PWM duty cycles (Δ):
+
+| Target Distance (D) | PWM Duty Cycle (Δ) | Haptic Feedback Profile |
+| :--- | :--- | :--- |
+| > 200 cm | 0% (Off) | Baseline Noise Floor / Resting |
+| 100 cm | 50% | Moderate Dynamic Pulse |
+| < 20 cm | 100% (Max) | Continuous High-Intensity Alert |
+
+---
+
+## 🚀 Future Development Roadmap
+- [ ] Transition from breadboard wiring to a custom **Rigid-Flex Printed Circuit Board (PCB)**.
+- [ ] Integrate an **AI Camera Module (ESP32-S3)** for real-world computer vision object recognition.
+- [ ] Implement **Kalman Filtering** for improved acoustic noise rejection.
+- [ ] Achieve **IP65 Ingress Protection** rating for weather resistance.
+
+---
+
+## 👥 Authors & Acknowledgments
+- **K. T. Dhananjaya Avishka Thanthilage** – Hardware & Software Integration
+- **Faculty of Engineering, SLIIT** – ME1050 Introduction to Engineering Design & Communication
 
