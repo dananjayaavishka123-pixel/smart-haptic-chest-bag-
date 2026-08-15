@@ -31,13 +31,14 @@ The **Smart Haptic Chest Bag** bridges this gap by integrating an ultrasonic dis
 
 ## 📊 Calibration & Testing Metrics
 
-The system maps physical distance (D) directly to dynamic PWM duty cycles (Δ):
+The system maps physical distance (D) directly to dynamic PWM duty cycles (Δ) across an active detection range of **50 cm to 10 cm**:
 
 | Target Distance (D) | PWM Duty Cycle (Δ) | Haptic Feedback Profile |
 | :--- | :--- | :--- |
-| > 200 cm | 0% (Off) | Baseline Noise Floor / Resting |
-| 100 cm | 50% | Moderate Dynamic Pulse |
-| < 20 cm | 100% (Max) | Continuous High-Intensity Alert |
+| > 50 cm | 0% (Off) | Out of Range / Baseline Noise Floor |
+| 50 cm | 25% | Initial Proximity Pulse |
+| 30 cm | 60% | Moderate Dynamic Vibration |
+| ≤ 10 cm | 100% (Max) | Continuous High-Intensity Alert |
 
 ---
 
